@@ -164,7 +164,8 @@ static const NSInteger kConstTagOfYBLevelListSubView = 666;
         if (_configModel.spacingOfSelectLineViewToSubViewContent > _configModel.marginOfSubView) {
             _configModel.spacingOfSelectLineViewToSubViewContent = _configModel.marginOfSubView;
         }
-        self.underLineSelectView.frame = CGRectMake(selectSubView.frame.origin.x+_configModel.marginOfSubView-_configModel.spacingOfSelectLineViewToSubViewContent, self.bounds.size.height-_configModel.heightOfUnderLineSelectedView, selectSubView.bounds.size.width-(2*_configModel.marginOfSubView)+(2*_configModel.spacingOfSelectLineViewToSubViewContent), _configModel.heightOfUnderLineSelectedView);
+        self.underLineSelectView.frame = CGRectMake(selectSubView.frame.origin.x+_configModel.marginOfSubView-_configModel.spacingOfSelectLineViewToSubViewContent+8, self.bounds.size.height-_configModel.heightOfUnderLineSelectedView, selectSubView.bounds.size.width-(2*_configModel.marginOfSubView)+(2*_configModel.spacingOfSelectLineViewToSubViewContent)-16, _configModel.heightOfUnderLineSelectedView);
+        self.underLineSelectView.layer.cornerRadius = 1.5;
         
     } else {
         //如果标题数量不能显示上一次点击下标了，回到第一个

@@ -30,7 +30,6 @@
         self.heightOfUnderLineView = 1.0f;
         
         self.spacingOfSubView = 15.0f;
-        self.marginOfSubView = 2.0f;
         self.spacingOfSelectLineViewToSubViewContent = 3.0f;
         
         self.backColor = [UIColor whiteColor];
